@@ -7,7 +7,7 @@ p = int(input())
 count1 = 0
 count2 = 0
 tf = 0
-if s * p > 1000:
+if s > 1000 or p > 1000:
     print("Ошибка!")
 while count1 < s:
     while count2 < p:
