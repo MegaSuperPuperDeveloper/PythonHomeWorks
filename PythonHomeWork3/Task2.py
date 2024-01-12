@@ -4,8 +4,10 @@
 list1 = [1, 2, 3, 4, 5]
 res = 100
 difference = 0
+res1 = 0
 N = int(input())
 for i in list1:
     if N - i < res:
         res = N - i
-print(res)
+        res1 = i
+print(res1)
