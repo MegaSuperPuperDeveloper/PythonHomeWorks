@@ -10,12 +10,24 @@
 # var3 = ['2 3 4 5']  элементы второго множества через пробел
 # Вывод: 3 5
 
-
-var1 = ['1 3 5 7 9']
-var2 = ['2 3 4 5']
-set(var1[0].split())
-set(var2[0].split())
-for i in var1:
-    for j in var2:
-        if i == j:
-            print(i)
+var1 = '5 5'
+var2 = '10 20 30 40 50'
+var3 = '10 20 30 40 50'
+var4 = []
+res = ""
+count = 0
+set(var2[0])
+set(var3[0])
+var2 = var2.split()
+var3 = var3.split()
+for i in var2:
+    for j in var3:
+        if i == j and i != " " and j != " ":
+            var4.append(i)
+for i in var4:
+    count += 1
+    if count == len(var4):
+        res += f"{i}"
+    else:
+        res += f"{i} "
+print(res)
